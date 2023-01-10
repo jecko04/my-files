@@ -1,0 +1,68 @@
+@font-face {
+  font-family: RFBarbariskarough2-Regular;
+  src: url(fonts/Barbariska.ttf);
+}
+
+/*login style start*/
+#login {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.login-form {
+  display: inline-grid;
+  grid-gap: 20px;
+  padding: 5rem 10px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.login-form label {
+  text-align: center;
+  color: #000;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding: 5px 0;
+  background: #47B5FF;
+}
+
+.login-form input {
+  width: 25rem;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.login-form button {
+  background: transparent;
+  border-style: none;
+  border: 1px solid #47B5FF;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #47B5FF;
+  color: #fff;
+}
+
+.login-form a {
+  text-align: center;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 12px;
+  padding-bottom: 5px;
+  letter-spacing: 4px;
+  color: #000;
+}
+
+.login-form a:hover {
+  color: lightblue;
+}
+
+/*login style ends*/

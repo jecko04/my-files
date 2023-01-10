@@ -1,0 +1,120 @@
+@font-face {
+  font-family: RFBarbariskarough2-Regular;
+  src: url("../fonts/Barbariska.ttf");
+}
+
+body {
+  font-family: arial;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+  font-family: RFBarbariskarough2-Regular;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*header style start*/
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background: #DFF6FF;
+  border-radius: 4px;
+}
+
+.logo {
+  display: flex;
+  padding-left: 1rem;
+}
+
+.logo img {
+  width: auto;
+  height: 60px;
+}
+
+.logo h2 {
+  font-weight: 900;
+  color: #06283D;
+}
+
+.navBar ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  line-height: 40px;
+  position: absolute;
+  right: 10rem;
+  visibility: hidden;
+}
+
+.navBar ul li {
+  padding-left: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.navBar ul li a:hover {
+  background: #06283D;
+  color: #fff;
+}
+
+@media (max-width: 858px) {
+  .navBar ul {
+    display: flex;
+    padding: 10px 0;
+    background: #DFF6FF;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 80px;
+    right: -100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navBar ul li a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .navBar ul li a:hover {
+    background: #06283D;
+    color: #fff;
+  }
+
+  #check {
+    right: 0;
+  }
+}
+
+img.menu {
+  width: auto;
+  height: 40px;
+  position: relative;
+  top: 1.0rem;
+  right: 6rem;
+}
+
+img.menu:hover {
+  opacity: .6;
+}
+
+@media (max-width: 858px) {
+  img.menu {
+    top: 1.0rem;
+    right: 3rem;
+  }
+}
+/*header style ends*/

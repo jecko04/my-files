@@ -1,0 +1,92 @@
+body {
+  font-family: arial;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#signup {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.signup-form {
+  display: inline-grid;
+  grid-gap: 20px;
+  padding: 0 10px;
+  padding-bottom: 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.signup-form a {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.signup-form img {
+  width: 20px;
+  height: 20px;
+}
+
+.signup-form label {
+  text-align: center;
+  color: #000;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background: #E0144C;
+  padding: 4px 0;
+}
+
+.signup-form input {
+  width: 25rem;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.signup-form button {
+  background: transparent;
+  border-style: none;
+  border: 1px solid #E0144C;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background: #E0144C;
+  color: #fff;
+}
+
+.signup-form select {
+  width: 25rem;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#onlyAdmin {
+  visibility: hidden;
+}
+
+#signup .reg-success {
+  color: #82CD47;
+  font-size: 17px;
+  margin: 0;
+}
+
+#signup .error {
+  color: #E0144C;
+  font-size: 17px;
+  margin: 0;
+}

@@ -1,0 +1,229 @@
+body {
+  font-family: arial;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#orderform {
+  margin-top: 20px;
+}
+
+.form {
+  border: 1px solid #000;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 0 20rem;
+  grid-template-areas:
+    "textp textp"
+    "texth2 texth2"
+    "info order1"
+    "info order2"
+    "info flavor"
+    "info btn"
+  ;
+}
+
+.add-info {
+  grid-area: info;
+  display: grid;
+}
+
+.add-info input {
+  font-size: 16px;
+  border-style: dashed;
+  padding: 5px;
+  height: 50px;
+}
+
+.sel {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0144C;
+  padding: 5px;
+}
+
+.sel select {
+  width: 100px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+}
+
+.label label {
+  padding: 0 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#orderform p {
+  grid-area: textp;
+  text-align: center;
+  padding: 5px;
+  background-color: #E0144C;
+}
+
+#orderform h2 {
+  grid-area: texth2;
+  text-align: center;
+  padding: 5px;
+  background-color: #E0144C;
+}
+
+#orderform .order-1 {
+  grid-area: order1;
+  width: 400px;
+}
+
+#orderform .order-2 {
+  grid-area: order2;
+  width: 400px;
+}
+
+#orderform .flavor {
+  grid-area: flavor;
+  width: 400px;
+}
+
+#orderform .btn {
+  grid-area: btn;
+  height: 30px;
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#orderform .btn:hover {
+  background: #E0144C;
+}
+
+#orderform .error {
+  color: #E0144C;
+  background: transparent;
+}
+
+#orderform .order-success {
+  color: #82CD47;
+  background: transparent;
+}
+
+#orderform .order-error {
+  color: #E0144C;
+  background: transparent;
+}
+
+@media (max-width: 858px) {
+  .form {
+    display: grid;
+    padding: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    margin: 0;
+    grid-template-areas:
+      "textp"
+      "texth2"
+      "info"
+      "order1"
+      "order2"
+      "flavor"
+      "btn"
+    ;
+  }
+
+  #orderform {
+    margin: 10px 35px;
+  }
+
+  .add-info input {
+    height: 40px;
+  }
+}
+
+/*pop up confirmation style*/
+.form-btn{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.87);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.orderStats{
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 160px;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+.orderStats h2{
+  color: #fff;
+}
+.orderStats a{
+  display: grid;
+  border: 1px solid #fff;
+  padding: 5px 0;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.orderStats a:hover{
+  background: #fff;
+  color: #000;
+}
+.contact-links{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+}
+.contact-links a{
+  padding: 5px 4.84rem;
+  border: 1px solid #E0144C;
+  color: #E0144C;
+}
+@media (max-width: 858px) {
+  .contact-links{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+  }
+
+}
+.info-us{
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.waiting-process h4{
+  background: transparent;
+  text-align: center;
+}
+.waiting-process h5{
+  background: transparent;
+  text-align: center;
+}

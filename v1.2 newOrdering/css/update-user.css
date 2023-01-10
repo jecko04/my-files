@@ -1,0 +1,90 @@
+body {
+  font-family: arial;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#update {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.update-form {
+  display: inline-grid;
+  grid-gap: 20px;
+  padding: 0 10px;
+  padding-bottom: 1rem;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.update-form a {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 5px;
+}
+
+.update-form img {
+  width: 20px;
+  height: 20px;
+}
+
+.update-form label {
+  text-align: center;
+  color: #000;
+  font-family: arial;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background: #F6C90E;
+  padding: 4px 0;
+}
+
+.update-form input {
+  width: 25rem;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.update-form button {
+  background: transparent;
+  border-style: none;
+  border: 1px solid #F6C90E;
+  border-radius: 4px;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.update-form button:hover {
+  background: #F6C90E;
+  color: #fff;
+}
+
+.update-form select {
+  width: 25rem;
+  border-style: dashed;
+  border-radius: 4px;
+  padding: 10px;
+}
+#onlyAdmin {
+  visibility: hidden;
+}
+#update .update-success {
+  color: #82CD47;
+  font-size: 17px;
+  margin: 0;
+}
+
+#update .error {
+  color: #E0144C;
+  font-size: 17px;
+  margin: 0;
+}

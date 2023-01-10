@@ -1,0 +1,58 @@
+@font-face {
+  font-family: RFBarbariskarough2-Regular;
+  src: url(fonts/Barbariska.ttf);
+}
+
+/*Learn more style start*/
+.sct-style {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 20px;
+}
+
+.sct-style h1 {
+  padding-top: 120px;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #06283D;
+}
+
+.sct-style hr {
+  width: 38rem;
+}
+
+.lrn-btn a {
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border: 1px solid #111;
+  border-radius: 4px;
+  padding: 15px 30px;
+  color: #06283D;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.lrn-btn a:hover {
+  background: #06283D;
+  color: #fff
+}
+
+@media(max-width: 858px) {
+  .sct-style h1 {
+    font-size: 35px;
+  }
+
+  .sct-style hr {
+    width: 25rem;
+  }
+
+  .lrn-btn a {
+    font-size: 15px;
+  }
+}
+
+/*Learn more style ends*/

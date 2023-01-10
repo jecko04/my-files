@@ -1,0 +1,198 @@
+@font-face {
+  font-family: RFBarbariskarough2-Regular;
+  src: url("fonts/Barbariska.ttf");
+}
+
+/*menu list sttyle start*/
+#food-menu {
+  background: #DFF6FF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  grid-template-areas:
+    "menu1 menu2 flaBtn"
+    "menu1 menu2 flaList"
+  ;
+}
+
+.menu-img {
+  width: 150px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#food-menu .menu1 {
+  grid-area: menu1;
+  background-image: url("img/menu/menuThumbs/menu1.jpg");
+  width: 410px;
+  height: 400px;
+}
+
+#food-menu .menu2 {
+  grid-area: menu2;
+  background-image: url("img/menu/menuThumbs/menu2.jpg");
+  width: 410px;
+  height: 400px;
+}
+
+#food-menu .flavor-btn {
+  grid-area: flaBtn;
+  width: 380px;
+  height: 100px;
+}
+
+#food-menu .flavor-list {
+  grid-area: flaList;
+  width: 300px;
+  height: 250px;
+}
+
+.menu-img div {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  font-family: arial;
+  opacity: 0;
+}
+
+.menu-img a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 858px) {
+  #food-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 15px;
+    padding-top: 60px;
+    grid-template-areas:
+      "menu1 menu1"
+      "menu2 menu2"
+      "flaBtn flaBtn"
+      "flaList flaList";
+  }
+
+  #food-menu .menu1 {
+    width: 410px;
+    height: 200px;
+  }
+
+  #food-menu .menu2 {
+    width: 410px;
+    height: 200px;
+  }
+
+  #food-menu .flavor-btn {
+    width: 410px;
+    height: 80px;
+  }
+}
+
+.flavor-btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.flavor-btn h3 {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 25px;
+  font-family: RFBarbariskarough2-Regular;
+  color: #000;
+}
+
+.flavor-btn img {
+  width: 100%;
+  height: 35px;
+}
+
+.flavor-list ul {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10px 10px 10px;
+  grid-template-rows: auto;
+  grid-column-gap: 33%;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  visibility: hidden;
+}
+
+.l {
+  font-size: 19px;
+  font-weight: bold;
+  font-family: RFBarbariskarough2-Regular;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 858px) {
+  .l {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
+  .flavor-list ul {
+    grid-column-gap: 40%;
+  }
+}
+
+.flavor-list ul li {
+  color: #000;
+  padding: 5px;
+  background:
+}
+
+.menu-img div:hover {
+  opacity: .6;
+  transition: all 0.3s ease-in-out 80ms;
+}
+
+/*menu list sttyle ends*/
+/*menu pop up new img sttyle start*/
+.menu-window {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.87);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.menu-window img {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+/*menu pop up new img sttyle ends*/
